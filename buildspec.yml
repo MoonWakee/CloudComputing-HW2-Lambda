@@ -5,7 +5,7 @@ phases:
         python: 3.9
   build:
     commands:
-      - aws cloudformation package --template-file sam.yml --s3-bucket cloud-computing-hw2-lambda --output-template-file outputsam.yml
+      - aws cloudformation package --template-file sam.yml --s3-bucket yaml-temp --output-template-file outputsam.yml
 artifacts:
   files:
     - sam.yml
