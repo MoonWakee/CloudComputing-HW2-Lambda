@@ -15,8 +15,6 @@ Resources:
       Environment:
         Variables:
           REGION: us-east-1
-  Bucket1:
-    Type: 'AWS::S3::Bucket'
     searchphotos:
     Type: 'AWS::Serverless::Function'
     Properties:
