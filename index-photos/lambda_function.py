@@ -9,7 +9,7 @@ def lambda_handler(event, context):
     print(event)
     key = event["Records"][0]["s3"]["object"]["key"]
     client = boto3.client("rekognition")
-    
+    # Hi
     
     response = client.detect_labels(
         Image = {"S3Object": {"Bucket": bucket, 'Name': key}}
